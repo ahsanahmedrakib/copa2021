@@ -1,0 +1,110 @@
+/* import fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* common styles */
+
+body{
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+/* main section start  */
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* header section start  */
+
+header{
+    background-color: #2D25A0;
+}
+/* header section  */
+.container{
+    width: 1080px;
+    display: flex;
+    color: #fff;
+    margin: 50px 0 80px;
+    justify-content: space-between;
+}
+.copa-title h1{
+    font-size: 64px;
+}
+
+.copa-banner img{
+    width: 100%;
+    transition: 1.5s ease-in-out;
+}
+.container:hover .copa-banner img{
+    transform: rotate(360deg) scale(.70);
+    position: relative;
+}
+.copa-button{
+    background-color: #E02C6D;
+    display: flex;
+    width: 122px;
+    padding: 10px 24px;
+    justify-content: space-between;
+    margin-top: -40px;
+}
+.button-title{
+    font-size: 16px;
+}
+
+/* players section  */
+
+.player-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 65px;
+}
+.player{
+    width: 308px;
+    height: 440px;
+    background-color: #fff;
+    padding: 14px;
+    box-shadow: 0px 0px 40px 0px #00000026;
+
+}
+.player-image img{
+    width: 100%;
+}
+.player-name h4{
+    font-size: 28px;
+    margin: 5px 0;
+}
+.player-description p{
+    font-size: 16px;
+    color: #6C6C6C;
+    margin: 0;
+}
+
+/* footer section  */
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0;
+}
+.footer-mid-icons i{
+    color: #969BAB;
+    background-color: #E7E7E8;
+    font-size: 15px;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 50%;
+}
+.footer-end p{
+    font-size: 18px;
+}
