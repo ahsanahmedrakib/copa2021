@@ -91,26 +91,6 @@ header{
     margin: 0;
 }
 
-/* footer section  */
-
-.footer-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 70px 0;
-}
-.footer-mid-icons i{
-    color: #969BAB;
-    background-color: #E7E7E8;
-    font-size: 15px;
-    margin: 5px;
-    padding: 7px;
-    border-radius: 50%;
-}
-.footer-end p{
-    font-size: 18px;
-}
-
 /* video start  */
 
 .video-section{
@@ -152,6 +132,60 @@ header{
     position: absolute;
 }
 
+/* sponsor strat  */
+
+.sponsor-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sponsor-title{
+    margin-top: 100px;
+    color: #173562;
+    font-size: 32px;
+}
+.sponsors{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0 30px;
+}
+.sponsor{
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    border-radius: 50px;
+}
+.sponsor img{
+    width: 80%;
+    padding: 5px 0 0 10px;
+}
+.tcl{
+    background-color: red;
+    border: 1px solid red;
+}
+.betsson{
+    background-color: #F76300;
+    border: 1px solid #F76300;
+}
+
+/* footer section  */
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0 60px 0;
+}
+.footer-mid-icons i{
+    color: #969BAB;
+    background-color: #E7E7E8;
+    font-size: 15px;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 50%;
+}
+.footer-end p{
+    font-size: 18px;
+}
+
 /* media query */
 
 /* mobile devices */
@@ -163,7 +197,7 @@ header{
         flex-direction: column;
     }
     .copa-description{
-        margin-left: 10px;
+        margin-left: 20px;
     }
     .copa-button{
         margin-top: 8px;
@@ -174,6 +208,14 @@ header{
     }
     .players, .videos{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        width: 250px;
+        height: 440px;
+    }
+    .sponsors{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
     }
     .footer-top img{
         width: 60%;
@@ -196,10 +238,14 @@ header{
         margin-bottom: 40px;
     }
     .copa-banner img{
-        width: 80%;
+        width: 60%;
     }
     .players, .videos{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .sponsors{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px 30px;
     }
     .footer-top img{
         width: 80%;
