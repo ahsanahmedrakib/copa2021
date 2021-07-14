@@ -36,7 +36,9 @@ main{
 .copa-title h1{
     font-size: 64px;
 }
-
+.copa-button i{
+    cursor: pointer;
+}
 .copa-button button{
     background-color: #E02C6D;
     /* display: flex; */
